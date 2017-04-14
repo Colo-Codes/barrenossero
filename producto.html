@@ -2,63 +2,73 @@
 <html>
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Press+Start+2P" rel="stylesheet">
+  <!-- jQuery 3 -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <!-- Tether -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <!-- Bootstrap javaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-  <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- Boostrap se puede referenciar a una URL, o a la versión descargada en nuestro servidor. -->
-  <style type="text/css">
-    .inputGroupContainer{
-      float: right;
+  <style class="text/css">
+    .card-img-left {
+      /*border-bottom-left-radius: calc(.25rem - 1px);
+      border-top-left-radius: calc(.25rem - 1px);
+      */float: left;
+      padding-right: 1em;
+      margin-bottom: -1.25em;
     }
-  
   </style>
-
 </head>
 
 <body>
-  <div class="container">
-    <form class="navbar-form navbar-left" role="search">
-
-      <div class="form-group">
-        <label class="col-md-6 control-label">Nombre</label>
-        <div class="col-md-6 inputGroupContainer">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input name="nombre" placeholder="Nombre completo" class="form-control" type="text">
-          </div>
-        </div>
-        </div>
-        <p></p>
-        <div class="form-group">
-          <label class="col-md-6 control-label">Direcci'on de e-mail</label>
-          <div class="col-md-6 inputGroupContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-              <input name="email" placeholder="email@dominio.com" class="form-control" type="text">
-            </div>
-          </div>
-        </div>
-        <p></p>
-        <div class="form-group">
-          <label class="col-md-6 control-label">D'ejenos su comentario</label>
-          <div class="col-md-6 inputGroupContainer">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-              <input name="comentario" placeholder="Escr'ibanos un comentario." class="form-control" type="text">
-            </div>
-          </div>
-        </div>
-
-        <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-
-
-
+  <!-- Heading -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Barrenos SeRo</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
     </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <img class="card-img-left" src="FOTO1.jpg" alt="Card image cap">
+      <div class="card-block">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">¡Nueva versión automática próximamente!</h4>
+      <p>En los próximos meses estaremos presentando al mercado la nueva versión del barreno completamente automático. Los barrenos actuales se podrán adaptar a esta nueva versión. Suscríbase a nuestro boletín informativo para recebir novedades!</p>
+      <p class="mb-0">
+        <form class="form-inline">
+          <label class="sr-only" for="inlineFormInputGroup">Ingrese su email</label>
+          <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+            <div class="input-group-addon">@</div>
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="mi@email.com">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Subscribirme</button>
+        </form>
+      </p>
+    </div>
+  </div>
+
+
+
+
 </body>
 
 </html>
